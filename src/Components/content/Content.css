@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+
+.content > div {
+    border-radius: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    border-radius: 20%;
+  }
+  .content > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    border-radius: 20%;
+  }
+  .content > div > div > h3 {
+    font-size: 32px;
+    font-weight: 800px;
+    margin: 0px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
+
+  .content > div > div > p {
+    font-size: 22px;
+    font-weight: 400px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  .content > div > div > button {
+    color: white;
+    border-radius: 5px;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 15px;
+  }
+  
+  .content > div > img{
+    padding: 40px 0px 40px 40px;
+    background-clip: content-box; 
+    box-shadow: inset 0 50px 0 0 rgb(236, 64, 107), inset -40px 0 0 0 rgb(236, 64, 107),inset 0 -50px 0 0 rgb(236, 64, 107), inset 50px 0 0 0px rgb(236, 64, 107);
+  }

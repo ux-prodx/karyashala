@@ -1,0 +1,44 @@
+/*! Start styling header*/
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container .parent {
+  position: relative;
+  margin: 0 0 15px; 
+  padding: 5px; 
+  padding-left: 100px; 
+  min-height: 50px;}
+.container .parent .fixed {
+  position: absolute; 
+  left: 0px; 
+  margin-right: 0px;
+  width: 90px; 
+  background-color: rgb(255, 255, 255);}
+
+  .container .parent .fi{
+  position: absolute; 
+  left: 27px;
+  }
+
+  .container .parent .fluid {
+  margin-left: 50px;
+}
+
+.container .parent .fl{
+  float: right;
+}
+.container .parents .left {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.container .parents .right {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.container .last .h9 {
+  text-align: center;
+  margin-left: 1000px;
+}

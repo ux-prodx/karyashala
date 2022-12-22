@@ -1,0 +1,95 @@
+/*! Start styling header*/
+.header {
+ 
+  justify-content: flex-end;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  background-color: white;
+  width: 100%;
+  color: #000000;
+  margin-bottom: 50px;
+ 
+}
+
+
+.header-links {
+  color: #000000;
+  text-align: right;
+  display: flex;
+  margin-left: 60px;
+}
+.burger-icon {
+  cursor: pointer;
+  display: none;
+  font-size: 35px;
+}
+.header-link {
+  cursor: pointer;
+  margin-right: 40px;
+  padding: 11.5px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-align: right;
+}
+.header-link:hover {
+  background-color: #2720ff54;
+}
+.header-link.active {
+  font-weight: 600;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #7777ff;
+}
+@media (max-width: 992px) {
+  .header-links {
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid;
+    width: 90%;
+    top: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f0f0f0;
+  }
+  .header-links.hide {
+    display: none;
+  }
+  .header-links::before {
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 22px solid #f0f0f0;
+    width: 0;
+    height: 0;
+    right: 5px;
+    top: -20px;
+  }
+  .burger-icon {
+    display: block;
+  }
+  .header-link {
+    margin: 1.5px 0px;
+    margin-left: 100px;
+    border-radius: 0px;
+  }
+  .header-link:hover {
+    border-radius: 5px;
+  }
+  .header-link:not(:last-child) {
+    border-bottom: 1px solid;
+  }
+  .header-link.active {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 10px;
+  }
+}
+/*? End styling header*/

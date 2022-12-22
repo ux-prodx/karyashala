@@ -1,0 +1,65 @@
+.searchFormContainer {
+  padding: 12px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 712px;
+}
+.searchForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchForm > div {
+  position: relative;
+}
+.searchForm > div > input {
+  border: 1px solid transparent;
+  height: 50px;
+  font-size: 18px;
+  outline: none;
+  padding-left: 30px;
+  width: 300px;
+  border-radius: 8px;
+}
+.searchForm > div > input::placeholder {
+  font-size: 15px;
+}
+.searchForm > div > input:focus {
+  outline: none;
+  border: 1px solid #7777ff;
+  transition: 0.3s;
+}
+.searchForm > button {
+  background-color: #7777ff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid #7777ff;
+  transition: 0.3s;
+}
+.searchForm > button:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 992px) {
+  .searchFormContainer {
+    width: 80%;
+    height: 200px;
+    margin-bottom: 150px;
+  }
+  .searchForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchForm > div {
+    width: 100%;
+  }
+  .searchForm > div > input {
+    width: 100%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+}

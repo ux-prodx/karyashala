@@ -1,0 +1,152 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 49%;
+}
+.eventImg {
+  width: 44%;
+  overflow: hidden;
+  display: flex;
+  justify-content: stretch;
+}
+.eventInfo {
+  align-items: stretch;
+  padding: 13px 16px;
+  width: 60%;
+}
+.after {
+  position: relative;
+}
+.after::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #9d9d9d;
+  width: 100%;
+  left: 0;
+  bottom: -27.5px;
+}
+.eventInfo > div:first-child {
+  margin-bottom: 55px;
+}
+.dateSets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.eventDate {
+  font-weight: 500;
+  font-size: 14px;
+}
+.eventSets {
+  background: #00b000;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.eventTitle {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tag {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background: rgba(0, 176, 0, 0.33);
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.eventInst {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.eventInst > img {
+  margin-right: 16px;
+}
+.eventInst > div > h4 {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.eventInst > div > p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.join {
+  text-align: center;
+  background: rgba(119, 119, 255, 0.8);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  border: 1px solid rgba(119, 119, 255, 0.8);
+  padding: 10px 24px;
+  transition: 0.3s;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.join:hover {
+  background-color: transparent;
+  color: black;
+}
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.share:hover {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 992px) {
+  .list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .list {
+    flex-direction: column;
+  }
+  .eventImg {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .eventImg > img {
+    width: 100%;
+  }
+  .eventInfo {
+    width: 100%;
+  }
+}

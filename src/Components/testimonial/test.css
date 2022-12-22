@@ -1,0 +1,149 @@
+.testimonial{
+    display: flex;
+    justify-content: center;flex-direction: column;
+    align-items: center;
+    margin-top: 148px;
+    margin-bottom: 48px;
+    height: fit-content;
+}
+
+.testimonial > h3 {
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+
+  }
+
+  .testimonial > p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: center;
+
+  }
+
+  .testimonial > div{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .testimonial > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 64px;
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  }
+
+
+.testimonial ul > li > div{
+  flex-direction: column;
+  margin-left: 6%;
+  margin-right: 4%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.testP {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4%;
+  
+}
+
+.testM {
+  
+  display:flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.testSt > img {
+  margin-left: 16px;
+  margin-top: 10px;
+
+}
+.testSt > div > h4 {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 8px;
+  
+}
+.testSt > div > p {
+  font-weight: 500;
+  font-size: 14px;
+}
+.tp{
+  display: flex;
+  flex-direction: row;
+}
+
+
+  .heading{
+    display: flex;
+    padding: 20px 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);;
+    width: 65%;
+  }
+  
+  .heading > h3 {
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+
+  }
+
+  .testimonial ul > li {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+    gap: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: 300px;
+   
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 500px;
+    margin-right: 7%;
+    margin-left: 7%;
+
+    
+  }
+  .heading > button {
+    color: white;
+    background-color: #7777FFCC;
+    padding: 15px 33px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: white;
+    margin-left: 40px;
+
+  }
+
+  .heading {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  @media (max-width: 992px) {
+    .testimonial > ul{
+      flex-direction: column;
+    }
+  }

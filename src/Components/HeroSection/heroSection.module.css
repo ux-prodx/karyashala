@@ -1,0 +1,83 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.landingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: calc(100vh - 148px);
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.landing > h1 {
+  font-weight: 800;
+  font-size: 44px;
+  margin-bottom: 16px;
+  width: 640px;
+}
+
+.landing > p {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 32px;
+  width: 543px;
+}
+.landing > p > span {
+  font-weight: bold;
+}
+.students > img {
+  width: 100%;
+}
+.colleges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.colleges > p {
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.colleges > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    justify-content: center;
+  }
+  .landing {
+    align-items: center;
+    text-align: center;
+  }
+  .landing > h1,
+  .landing > p {
+    width: 100%;
+  }
+  .students {
+    display: none;
+  }
+
+  .colleges > div > img {
+    width: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .landingContainer {
+    height: 100vh;
+  }
+}
