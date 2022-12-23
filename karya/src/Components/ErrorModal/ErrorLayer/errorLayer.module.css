@@ -1,0 +1,45 @@
+.overLayer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 0px;
+  overflow: hidden;
+  z-index: 21;
+}
+.error {
+  padding: 10px 20px;
+  background: #7777ff;
+  color: white;
+  font-size: 25px;
+}
+.message {
+  padding: 20px 20px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  padding-top: 10px;
+}
+.button > button {
+  background: rgba(119, 119, 255, 0.8);
+  font-weight: 800;
+  font-size: 14px;
+  color: white;
+  padding: 10px 24px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.button > button:hover {
+  background-color: transparent;
+  border: 1px solid rgba(119, 119, 255, 0.8);
+  color: #7777ff;
+}
